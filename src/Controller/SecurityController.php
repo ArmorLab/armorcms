@@ -14,9 +14,9 @@ final class SecurityController extends AbstractController
     #[Route('/login', name: 'login')]
     public function login(AuthenticationUtils $authenticationUtils): Response
     {
-         if ($this->getUser()) {
-             return $this->redirectToRoute('admin_dashboard');
-         }
+        if ($this->getUser()) {
+            return $this->redirectToRoute('admin_dashboard');
+        }
 
         return $this->render(
             'security/login.html.twig',
@@ -28,5 +28,7 @@ final class SecurityController extends AbstractController
     }
 
     #[Route('/logout', name: 'logout')]
-    public function logout(): void {}
+    public function logout(): void
+    {
+    }
 }
