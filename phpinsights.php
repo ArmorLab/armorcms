@@ -8,14 +8,7 @@ use SlevomatCodingStandard\Sniffs\Commenting\DocCommentSpacingSniff;
 
 return [
     'preset' => 'symfony',
-    'exclude' => [
-        //  'path/to/directory-or-file'
-    ],
-    'add' => [
-        //  ExampleMetric::class => [
-        //      ExampleInsight::class,
-        //  ]
-    ],
+    'ide' => 'phpstorm',
     'remove' => [
         ForbiddenSetterSniff::class,
         DocCommentSpacingSniff::class,
@@ -27,4 +20,11 @@ return [
             'ignoreComments' => false,
         ],
     ],
+    'requirements' => [
+        'min-quality' => 90,
+        'min-complexity' => 85,
+        'min-architecture' => 90,
+        'min-style' => 90,
+    ],
+    'threads' => null,
 ];
