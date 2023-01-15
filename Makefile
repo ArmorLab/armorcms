@@ -8,6 +8,8 @@ build:
 	docker exec -u www-data armorcms_php php bin/console doctrine:fixtures:load --no-interaction
 start:
 	docker compose up -d --remove-orphans
+stop:
+	docker compose down
 php:
 	docker exec -u www-data armorcms_php $(cmd)
 static-analysis:
