@@ -71,12 +71,12 @@
     },
     "autoload": {
         "psr-4": {
-            "ArmorCMS\\": "src/"
+            "Armorcms\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ArmorCMS\\Tests\\": "tests/"
+            "Armorcms\\Tests\\": "tests/"
         }
     },
     "replace": {

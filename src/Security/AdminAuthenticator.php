@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ArmorCMS\Security;
+namespace Armorcms\Security;
 
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;

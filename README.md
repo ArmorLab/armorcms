@@ -1,4 +1,4 @@
-# ArmorCMS
+# Armorcms
 
 Simple CMS based on Symfony framework
 

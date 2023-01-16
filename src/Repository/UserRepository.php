@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace ArmorCMS\Repository;
+namespace Armorcms\Repository;
 
-use ArmorCMS\Entity\User;
+use Armorcms\Entity\User;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\ORM\ORMException;
 use Doctrine\Persistence\ManagerRegistry;

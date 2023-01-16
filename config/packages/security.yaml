@@ -2,7 +2,7 @@ security:
     # https://symfony.com/doc/current/security/experimental_authenticators.html
     enable_authenticator_manager: true
     password_hashers:
-        ArmorCMS\Entity\User:
+        Armorcms\Entity\User:
             algorithm: auto
 
     # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
@@ -10,7 +10,7 @@ security:
         # used to reload user from session & other features (e.g. switch_user)
         app_user_provider:
             entity:
-                class: ArmorCMS\Entity\User
+                class: Armorcms\Entity\User
                 property: email
     firewalls:
         dev:
@@ -22,7 +22,7 @@ security:
             login_throttling:
                 max_attempts: 3
                 interval: '15 minutes'
-            custom_authenticator: ArmorCMS\Security\AdminAuthenticator
+            custom_authenticator: Armorcms\Security\AdminAuthenticator
             logout:
                 path: logout
                 # where to redirect after logout
