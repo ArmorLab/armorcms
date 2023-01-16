@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Command;
+namespace ArmorCMS\Command;
 
 use Exception;
 use Symfony\Component\Console\Command\Command;
