@@ -17,7 +17,7 @@ final class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column(type:"string", length:180, unique:true)]
+    #[ORM\Column(type:"string", length:128, unique:true)]
     private ?string $email;
 
     #[ORM\Column(type:"json")]
