@@ -9,6 +9,11 @@ use Doctrine\Migrations\AbstractMigration;
 
 final class Version20210725152210 extends AbstractMigration
 {
+    public function getDescription(): string
+    {
+        return 'Add user table.';
+    }
+
     public function up(Schema $schema): void
     {
         $this->addSql(

@@ -18,3 +18,5 @@ composer:
 	docker exec -u www armorcms_php composer install
 migrate:
 	docker exec -u www armorcms_php php bin/console doctrine:migrations:migrate
+migration:
+	docker exec -u www armorcms_php php bin/console doctrine:migrations:diff
