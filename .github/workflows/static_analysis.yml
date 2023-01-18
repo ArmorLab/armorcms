@@ -11,6 +11,7 @@ jobs:
                     cp .env.example .env
             -   name: Install composer dependencies
                 run: |
+                    php8.2 bin/composer self-update 2.5.1
                     php8.2 bin/composer install
             -   name: Run PHPInsights
                 run: |
