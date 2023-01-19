@@ -13,8 +13,54 @@ class MenuItem
     #[ORM\Column]
     private ?int $id = null;
 
+    public function __construct(
+        #[ORM\Column(type:"string", length:128)]
+        private string $name,
+        #[ORM\Column(type:"string", length:256)]
+        private string $link,
+        #[ORM\Column(type:"string", length:256)]
+        private string $target,
+        #[ORM\Column(type:"string", length:128)]
+        private string $status,
+        #[ORM\Column(type:"integer")]
+        private string $priority,
+        #[ORM\Column(type:"string", length:128)]
+        private string $pathType,
+    ) {
+    }
+
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
+    public function getLink(): string
+    {
+        return $this->link;
+    }
+
+    public function getTarget(): string
+    {
+        return $this->target;
+    }
+
+    public function getStatus(): string
+    {
+        return $this->status;
+    }
+
+    public function getPriority(): string
+    {
+        return $this->priority;
+    }
+    
+    public function getPathType(): string
+    {
+        return $this->pathType;
     }
 }
