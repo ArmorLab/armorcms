@@ -13,6 +13,9 @@ class MenuItem
     #[ORM\Column]
     private ?int $id = null;
 
+    #[ORM\ManyToOne(targetEntity: Menu::class, inversedBy: 'menuItems')]
+    private Menu $menu;
+
     public function __construct(
         #[ORM\Column(type:"string", length:128)]
         private string $name,
@@ -62,5 +65,15 @@ class MenuItem
     public function getPathType(): string
     {
         return $this->pathType;
+    }
+
+    public function getMenu(): Menu
+    {
+        return $this->menu;
+    }
+
+    public function setMenu(Menu $menu): void
+    {
+        $this->menu = $menu;
     }
 }
