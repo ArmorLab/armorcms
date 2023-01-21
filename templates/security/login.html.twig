@@ -12,11 +12,15 @@
             <div class="header">
                 <img src="/assets/images/admin/logo.png" alt="ArmorCMS" />
             </div>
-            <label for="username">{{ 'security.login' | trans }}:</label>
-            <input type="text" id="username" name="_username" value="{{ last_username }}" />
+            <label for="inputEmail">{{ 'security.login' | trans }}:</label>
+            <input type="text" id="inputEmail" name="email" value="{{ last_username }}" />
 
-            <label for="password">{{ 'security.password' | trans }}:</label>
-            <input type="password" id="password" name="_password" />
+            <label for="inputPassword">{{ 'security.password' | trans }}:</label>
+            <input type="password" id="inputPassword" name="password" />
+
+            <input type="hidden" name="_csrf_token"
+                   value="{{ csrf_token('authenticate') }}"
+            >
 
             <button type="submit">{{ 'security.sign_in' | trans }}</button>
         </form>
