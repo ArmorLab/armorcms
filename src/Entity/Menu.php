@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Armorcms\Entity;
 
 use Armorcms\Repository\MenuRepository;
@@ -8,7 +10,7 @@ use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: MenuRepository::class)]
-class Menu
+final class Menu
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
@@ -19,11 +21,11 @@ class Menu
     private Collection $menuItems;
 
     private function __construct(
-        #[ORM\Column(type:"string", length:128)]
+        #[ORM\Column(type:'string', length:128)]
         private string $name,
-        #[ORM\Column(type:"string", length:128)]
+        #[ORM\Column(type:'string', length:128)]
         private string $title,
-        #[ORM\Column(type:"boolean")]
+        #[ORM\Column(type:'boolean')]
         private bool $isVisible
     ) {
         $this->menuItems = new ArrayCollection();

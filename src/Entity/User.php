@@ -18,16 +18,19 @@ final class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column(type:"string", length:128, unique:true)]
+    #[ORM\Column(type:'string', length:128, unique:true)]
     private ?string $email;
 
-    #[ORM\Column(type:"json")]
+    /**
+     * @var string[]    
+     */
+    #[ORM\Column(type:'json')]
     private array $roles = [];
 
-    #[ORM\Column(type:"string")]
+    #[ORM\Column(type:'string')]
     private string $password;
 
-    #[ORM\Column(type:"datetime_immutable", nullable: true)]
+    #[ORM\Column(type:'datetime_immutable', nullable: true)]
     private ?DateTimeImmutable $lastLoginAt;
 
     public function getId(): ?int

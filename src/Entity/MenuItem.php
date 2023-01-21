@@ -1,12 +1,14 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Armorcms\Entity;
 
 use Armorcms\Repository\MenuItemRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: MenuItemRepository::class)]
-class MenuItem
+final class MenuItem
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
@@ -17,17 +19,17 @@ class MenuItem
     private Menu $menu;
 
     public function __construct(
-        #[ORM\Column(type:"string", length:128)]
+        #[ORM\Column(type:'string', length:128)]
         private string $name,
-        #[ORM\Column(type:"string", length:256)]
+        #[ORM\Column(type:'string', length:256)]
         private string $link,
-        #[ORM\Column(type:"string", length:256)]
+        #[ORM\Column(type:'string', length:256)]
         private string $target,
-        #[ORM\Column(type:"string", length:128)]
+        #[ORM\Column(type:'string', length:128)]
         private string $status,
-        #[ORM\Column(type:"integer")]
+        #[ORM\Column(type:'integer')]
         private string $priority,
-        #[ORM\Column(type:"string", length:128)]
+        #[ORM\Column(type:'string', length:128)]
         private string $pathType,
     ) {
     }
@@ -61,7 +63,7 @@ class MenuItem
     {
         return $this->priority;
     }
-    
+
     public function getPathType(): string
     {
         return $this->pathType;

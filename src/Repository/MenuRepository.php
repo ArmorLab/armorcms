@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Armorcms\Repository;
 
 use Armorcms\Entity\Menu;
@@ -14,7 +16,7 @@ use Doctrine\Persistence\ManagerRegistry;
  * @method Menu[]    findAll()
  * @method Menu[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class MenuRepository extends ServiceEntityRepository
+final class MenuRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {

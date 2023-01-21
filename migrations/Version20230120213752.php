@@ -17,7 +17,11 @@ final class Version20230120213752 extends AbstractMigration
     public function up(Schema $schema): void
     {
         $this->addSql('ALTER TABLE menu_item ADD menu_id INT DEFAULT NULL');
-        $this->addSql('ALTER TABLE menu_item ADD CONSTRAINT FK_D754D550CCD7E912 FOREIGN KEY (menu_id) REFERENCES menu (id)');
+        $this->addSql(
+            'ALTER TABLE menu_item 
+                ADD CONSTRAINT FK_D754D550CCD7E912 
+                FOREIGN KEY (menu_id) REFERENCES menu (id)'
+        );
         $this->addSql('CREATE INDEX IDX_D754D550CCD7E912 ON menu_item (menu_id)');
     }
 

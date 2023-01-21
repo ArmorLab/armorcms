@@ -24,7 +24,7 @@ final class AdminDashboardController extends AbstractController
         return $this->render(
             'admin/dashboard.html.twig',
             [
-                'lastLoggedUsers' => $this->userRepository->getLastLoggedUsers(self::LAST_LOGIN_USERS_NUMBER)
+                'lastLoggedUsers' => $this->userRepository->getLastLoggedUsers(self::LAST_LOGIN_USERS_NUMBER),
             ]
         );
     }
