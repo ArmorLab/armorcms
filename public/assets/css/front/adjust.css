@@ -1,0 +1,122 @@
+/**
+* @author Paweł Poloczek <pawel@armorlab.pl>
+* adjust
+*/
+
+html,
+body {
+    background-color: #000 !important;
+    color: #FFF !important;
+}
+
+a {
+    color: #FFF !important;
+}
+
+a:hover {
+    color: #CFA550 !important;
+}
+
+.header {
+    background-color: #000 !important;
+}
+
+#menu {
+    background-color: #CFA550 !important;
+}
+
+#menu li a {
+    color: #000 !important;
+}
+
+.search-btn {
+    color: #000 !important;
+}
+
+.search-phrase {
+    background-color: #000 !important;
+    color: #FFF !important;
+}
+
+.timeline-search .timeline-search-btn {
+    color: #000 !important;
+}
+
+.map-infowindow {
+    background-color: #000 !important;
+}
+
+.document-box .document-signature,
+.recording-box .recording-signature {
+    background-color: #000 !important;
+    color: #FFF !important;
+}
+
+.document-box .document-signature a,
+.document-box .document-signature a:hover,
+.recording-box .recording-signature a,
+.recording-box .recording-signature a:hover {
+    color: #FFF !important;
+}
+
+.document-box .document-signature .tags .tag,
+.recording-box .recording-signature .tags .tag {
+    background-color: #CFA550 !important;
+    color: #000 !important;
+}
+
+.contact-form .form-row-50 select,
+.contact-form .form-row-50 input {
+    background-color: #CFA550 !important;
+    color: #000 !important;
+}
+
+.contact-form .form-row textarea {
+	background-color: #CFA550 !important;
+    color: #000 !important;
+}
+
+.contact-form .save-button button {
+    color: #000 !important;
+}
+
+.map-infowindow a,
+.map-infowindow a:hover {
+    color: #000 !important;
+}
+
+.infowindow-bg {
+    background-color: #000 !important;
+}
+
+.infowindow-close-btn {
+    background-color: #CFA550 !important;
+}
+
+.comment-form {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.comment-form .comment-content {
+    background-color: #CFA550 !important;
+    color: #000 !important;
+}
+
+.comment-form .comment-email {
+    background-color: #CFA550 !important;
+    color: #000 !important;
+}
+
+.comment-form .comment-submit-btn {
+    color: #000 !important;
+}
+
+.comment-form .comment-submit-btn:hover {
+	color: #000 !important;
+}
+
+.comment {
+    background-color: #CFA550 !important;
+    color: #000 !important;
+}

@@ -1,0 +1,304 @@
+/**
+* @author Paweł Poloczek <pawel@armorlab.pl>
+*/
+
+.document-box {
+    /*background-color: #CFA550;*/
+    position: relative;
+}
+
+.recording-box .prev-document,
+.document-box .prev-document {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 150px;
+	height: 100%;
+}
+
+.recording-box .next-document,
+.document-box .next-document {
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 150px;
+	height: 100%;
+}
+
+.recording-box .next-document {
+	right: 0;
+}
+
+.document-box .next-document {
+	right: 0;
+}
+
+.next-document,
+.prev-document {
+	cursor: pointer;
+}
+
+.next-document img,
+.prev-document img {
+	position: absolute;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	display: none;
+}
+
+.next-document:hover,
+.prev-document:hover {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.next-document:hover img,
+.prev-document:hover img {
+	display: block;
+}
+
+.document-box .document-photo {
+    width: 70%;
+    display: table-cell;
+    max-width: 970px;
+    vertical-align: top;
+    font-size: 0;
+    position: relative;
+}
+
+.document-box .document-photo img.scan {
+    width: 100%;
+    max-width: 970px;
+}
+
+.document-box .document-signature {
+    /*color: #FFF;*/
+    width: 30%;
+    display: table-cell;
+    padding: 0 15px;
+    vertical-align: top;
+    max-width: 200px;
+    font-size: 16px;
+    background-color: rgba(207, 165, 80, 0.5);
+}
+
+.document-box .document-signature h1,
+.recording-box .recording-signature h1 {
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.document-box .document-signature p,
+.document-box .document-signature .tags,
+.recording-box .recording-signature p,
+.recording-box .recording-signature .tags {
+    margin-bottom: 12px;
+}
+
+.document-box .document-signature .tags .tag,
+.recording-box .recording-signature .tags .tag {
+    padding: 6px 3px;
+    background-color: #FFF;
+    color: #CFA550;
+    margin-bottom: 6px;
+    display: inline-block;
+}
+
+.document-description {
+    margin: 50px 0;
+}
+
+.recording-box {
+	margin: 30px 0;
+	position: relative;
+}
+
+.recording-left {
+    float: left;
+    width: -webkit-calc(100% - 380px);
+    width: -moz-calc(100% - 380px);
+    width: calc(100% - 380px);
+    position: relative;
+}
+
+.recording-photo,
+.recording-basic-data,
+.recording-signature {
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.recording-photo {
+	width: 350px;
+    float: left;
+}
+
+.recording-photo img {
+    width: 100%;
+    max-width: 350px;
+}
+
+.recording-signature {
+	background-color: rgba(207, 165, 80, 0.5);
+	padding: 15px;
+	float: right;
+	width: 350px;
+}
+
+.recording-basic-data {
+	margin: 0 20px;
+	width: 395px;
+}
+
+.collection-document {
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 30px;
+}
+
+.collection-document.first {
+    margin-right: 25px;
+}
+
+.collection-document.last {
+    margin-left: 25px;
+}
+
+.recording-elements {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.recording-element {
+	display: inline-block;
+	width: 270px;
+	vertical-align: bottom;
+	margin-right: 26px;
+	text-align: left;
+	margin-bottom: 30px;
+}
+
+.recording-element.last {
+	margin-right: 0;
+}
+
+@media screen and (max-width: 1176px) {
+    .document-box .document-photo {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .document-box .document-photo img.scan {
+        max-width: 100%;
+    }
+
+    .document-box .document-signature {
+        display: block;
+        width: -webkit-calc(100% - 30px);
+        width: -moz-calc(100% - 30px);
+    	width: calc(100% - 30px);
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .collection-documents {
+        text-align: center;
+    }
+
+    .collection-document {
+        width: 30%;
+        overflow: hidden;
+    }
+
+    .collection-document img {
+        width: 100%;
+    }
+
+    .recording-signature {
+        display: block;
+        float: none;
+        width: -webkit-calc(100% - 30px);
+        width: -moz-calc(100% - 30px);
+    	width: calc(100% - 30px);
+    }
+
+    .recording-left {
+        float: none;
+        width: 100%;
+    }
+
+    .recording-basic-data {
+        float: right;
+        width: -webkit-calc(100% - 370px);
+        width: -moz-calc(100% - 370px);
+    	width: calc(100% - 370px);
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .recording-left {
+        text-align: center;
+    }
+
+    .recording-photo {
+        float: none;
+    }
+
+    .recording-basic-data {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .collection-document,
+    .collection-document.first,
+    .collection-document.last {
+        margin-left: 0;
+        margin-right: 0;
+        width: 370px;
+    }
+    
+    .recording-box .next-document,
+    .document-box .next-document,
+    .recording-box .prev-document,
+    .document-box .prev-document
+    {
+            width: 80px;
+    }
+    
+    .recording-box .next-document img,
+    .document-box .next-document img,
+    .recording-box .prev-document img,
+    .document-box .prev-document img
+    {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .collection-document,
+    .collection-document.first,
+    .collection-document.last {
+        width: 100%;
+    }
+
+    .recording-element,
+    .main-recording {
+        text-align: center;
+    }
+
+    .recording-photo {
+        width: 100%;
+        max-width: 350px;
+    }
+}

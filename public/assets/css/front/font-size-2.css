@@ -1,0 +1,145 @@
+/**
+* @author Paweł Poloczek <pawel@armorlab.pl>
+* font size +8
+*/
+
+html,
+body {
+    font-size: 26px !important;
+}
+
+h1 {
+    font-size: 40px !important;
+}
+
+h2 {
+    font-size: 36px !important;
+}
+
+h3 {
+    font-size: 32px !important;
+}
+
+h4, h5, h6 {
+    font-size: 28px !important;
+}
+
+.font-size,
+.adjust {
+    font-size: 28px !important;
+}
+
+#menu-bar {
+    font-size: 40px !important;
+}
+
+#menu li a {
+    font-size: 30px !important;
+}
+
+.article-description h4 {
+    font-size: 36px !important;
+}
+
+.contact-form .form-row textarea {
+    font-size: 26px !important;
+}
+
+.contact-form .form-row-50 select,
+.contact-form .form-row-50 input {
+    font-size: 26px !important;
+}
+
+.contact-form .form-row-50 select option {
+    font-size: 26px !important;
+}
+
+.contact-form .save-button button {
+    font-size: 26px !important;
+}
+
+.document-box .document-signature {
+    font-size: 24px !important;
+}
+
+.document-box .document-signature h1,
+.recording-box .recording-signature h1 {
+    font-size: 28px !important;
+}
+
+.map-infowindow h1{
+    font-size: 24px !important;
+}
+
+h1.homepage-header {
+    font-size: 44px !important;
+}
+
+h2.homepage-header {
+    font-size: 40px !important;
+}
+
+h3.homepage-header {
+    font-size: 36px !important;
+}
+
+.logotypes th {
+    font-size: 30px !important;
+}
+
+.logotypes td {
+    font-size: 30px !important;
+}
+
+.main-carousel .slick-prev:before,
+.main-carousel .slick-next:before {
+    font-size: 48px !important;
+}
+
+.main-carousel .slick-dots li button::before {
+    font-size: 28px !important;
+}
+
+.timeline-search .timeline-search-btn {
+    font-size: 26px !important;
+}
+
+.timeline-search label,
+.timeline-search .decade-input,
+.timeline-search .timeline-search-btn {
+    font-size: 32px !important;
+}
+
+.slider-title {
+    font-size: 44px !important;
+}
+
+.search-btn {
+    font-size: 26px !important;
+}
+
+.comment-form .comment-content {
+    font-size: 26px !important;
+}
+
+.comment-form .comment-email {
+    font-size: 26px !important;
+}
+
+.comment-form .comment-submit-btn {
+    font-size: 26px !important;
+}
+
+.comments h4 {
+    font-size: 32px !important;
+}
+
+@media screen and (max-width: 575px) {
+    h1 {
+        font-size: 34px !important;
+    }
+
+    .inner-footer .social-icons a {
+        font-size: 40px !important;
+    }
+}

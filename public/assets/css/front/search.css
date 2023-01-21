@@ -1,0 +1,36 @@
+/**
+* @author Paweł Poloczek <pawel@armorlab.pl>
+*/
+
+.search-form {
+    display: inline-block;
+    line-height: 60px;
+    /*float: right;
+    margin: 18px 0 18px 20px;*/
+    position: relative;
+    width: 100%;
+}
+
+.search-phrase {
+    background-color: #FFF;
+    border: solid 1px #CFA550;
+    padding: 3px 30px 3px 6px;
+    color: #424545;
+    display: block;
+    height: 22px;
+    width: calc(100% - 38px);
+}
+
+.search-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70px;
+    height: 30px;
+    background-color: #CFA550;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 18px;
+    font-family: 'Calluna';
+    /* background-image: url('/assets/images/front/search_icon.png'); */
+}
