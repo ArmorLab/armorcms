@@ -1,0 +1,121 @@
+{% set actualPath =  app.request.getBaseUrl ~ app.request.getPathInfo %}
+
+<aside>
+    <nav class="main-menu">
+        <ul>
+            <li>
+            	<a href="{{ path('admin_dashboard') }}" {% if actualPath == path('admin_dashboard') %}class="active"{% endif %}>
+            		<i class="fa fa-area-chart" aria-hidden="true"></i>{{ 'admin.dashboard' | trans }}
+            	</a>
+            </li>
+{#            <li class="menu-toggle">#}
+{#            	<a href="#" {% if 'cms' in actualPath %}class="active"{% endif %}>#}
+{#            		<i class="fa fa-file-text-o" aria-hidden="true"></i>{{ 'admin.cms' | trans }}#}
+{#            	</a>#}
+{#                <ul {% if 'cms' in actualPath %}style="display: block;"{% endif %}>#}
+{#                    <li>#}
+{#                    	<a href="{{ path('admin_article_index') }}"  {% if actualPath == path('admin_article_index') %}class="active"{% endif %}>#}
+{#                    		<i class="fa fa-file-text-o" aria-hidden="true"></i>{{ 'admin.articles' | trans }}#}
+{#                    	</a>#}
+{#                    </li>#}
+{#                    <li>#}
+{#                    	<a href="{{ path('admin_category_index') }}" {% if actualPath == path('admin_category_index') %}class="active"{% endif %}>#}
+{#                    		<i class="fa fa-folder-open" aria-hidden="true"></i>{{ 'admin.categories' | trans }}#}
+{#                    	</a>#}
+{#                    </li>#}
+{#                    <li>#}
+{#                    	<a href="{{ path('admin_menu_index') }}" {% if actualPath == path('admin_menu_index') %}class="active"{% endif %}>#}
+{#                    		<i class="fa fa-sitemap" aria-hidden="true"></i>{{ 'admin.menus' | trans }}#}
+{#                    	</a>#}
+{#                    </li>#}
+{#                    <li>#}
+{#                    	<a href="{{ path('admin_menu_item_index') }}" {% if actualPath == path('admin_menu_item_index') %}class="active"{% endif %}>#}
+{#                    		<i class="fa fa-link" aria-hidden="true"></i>{{ 'admin.menu_items' | trans }}#}
+{#                    	</a>#}
+{#                    </li>#}
+{#                    <li>#}
+{#                    	<a href="{{ path('admin_image_index') }}" {% if actualPath == path('admin_image_index') %}class="active"{% endif %}>#}
+{#                    		<i class="fa fa-file-image-o" aria-hidden="true"></i>{{ 'admin.images' | trans }}#}
+{#                    	</a>#}
+{#                    </li>#}
+{#                    <li>#}
+{#                    	<a href="{{ path('admin_gallery_index') }}" {% if actualPath == path('admin_gallery_index') %}class="active"{% endif %}>#}
+{#                    		<i class="fa fa-picture-o" aria-hidden="true"></i>{{ 'admin.galleries' | trans }}#}
+{#                    	</a>#}
+{#                    </li>#}
+{#                    <li>#}
+{#                    	<a href="{{ path('admin_file_index') }}" {% if actualPath == path('admin_file_index') %}class="active"{% endif %}>#}
+{#                    		<i class="fa fa-files-o" aria-hidden="true"></i>{{ 'admin.files' | trans }}#}
+{#                    	</a>#}
+{#                    </li>#}
+{#					<li>#}
+{#						<a href="{{ path('admin_text_block_index') }}" {% if actualPath == path('admin_text_block_index') %}class="active"{% endif %}>#}
+{#							<i class="fa fa-align-left" aria-hidden="true"></i>Bloki tekstowe#}
+{#						</a>#}
+{#					</li>#}
+{#                </ul>#}
+{#            </li>#}
+{#            <li class="menu-toggle">#}
+{#            	<a href="#" {% if 'archive' in actualPath %}class="active"{% endif %}>#}
+{#            		<i class="fa fa-archive" aria-hidden="true"></i>{{ 'admin.archive' | trans }}#}
+{#            	</a>#}
+{#                <ul {% if 'archive' in actualPath %}style="display: block;"{% endif %}>#}
+{#                    <li>#}
+{#                    	<a href="{{ path('admin_collection_index') }}" {% if actualPath == path('admin_collection_index') %}class="active"{% endif %}>#}
+{#                    		<i class="fa fa-files-o" aria-hidden="true"></i>{{ 'admin.collections' | trans }}#}
+{#                    	</a>#}
+{#                    </li>#}
+{#                    <li>#}
+{#                    	<a href="{{ path('admin_document_index') }}" {% if actualPath == path('admin_document_index') %}class="active"{% endif %}>#}
+{#                    		<i class="fa fa-file-o" aria-hidden="true"></i>{{ 'admin.documents' | trans }}#}
+{#                    	</a>#}
+{#                    </li>#}
+{#                    <li>#}
+{#                    	<a href="{{ path('admin_license_index') }}" {% if actualPath == path('admin_license_index') %}class="active"{% endif %}>#}
+{#                    		<i class="fa fa-creative-commons" aria-hidden="true"></i>{{ 'admin.licenses' | trans }}#}
+{#                    	</a>#}
+{#                    </li>#}
+{#                    <li>#}
+{#                    	<a href="{{ path('admin_tag_index') }}" {% if actualPath == path('admin_tag_index') %}class="active"{% endif %}>#}
+{#                    		<i class="fa fa-hashtag" aria-hidden="true"></i>{{ 'admin.tags' | trans }}#}
+{#                    	</a>#}
+{#                    </li>#}
+{#                    <li>#}
+{#                    	<a href="{{ path('admin_document_type_index') }}" {% if actualPath == path('admin_document_type_index') %}class="active"{% endif %}>#}
+{#                    		<i class="fa fa-file" aria-hidden="true"></i>{{ 'admin.document_types' | trans }}#}
+{#                    	</a>#}
+{#                    </li>#}
+{#                </ul>#}
+{#            </li>#}
+{#            {% if is_granted('ROLE_ADMIN')%}#}
+{#            <li class="menu-toggle">#}
+{#            	<a href="#" {% if 'settings' in actualPath %}class="active"{% endif %}>#}
+{#            		<i class="fa fa-cogs" aria-hidden="true"></i>{{ 'admin.settings' | trans }}#}
+{#            	</a>#}
+{#                <ul {% if 'settings' in actualPath %}style="display: block;"{% endif %}>#}
+{#                    <li>#}
+{#                    	<a href="{{ path('admin_user_index') }}" {% if actualPath == path('admin_user_index') %}class="active"{% endif %}>#}
+{#                    		<i class="fa fa-users" aria-hidden="true"></i>{{ 'admin.users' | trans }}#}
+{#                    	</a>#}
+{#                    </li>#}
+{#                    <li>#}
+{#                    	<a href="{{ path('export_archive_metadata') }}" {% if actualPath == path('export_archive_metadata') %}class="active"{% endif %}>#}
+{#                    		<i class="fa fa-database" aria-hidden="true"></i>{{ 'admin.export_metadata' | trans }}#}
+{#                    	</a>#}
+{#                    </li>#}
+{#                    {% if is_granted('ROLE_ROOT')%}#}
+{#                    <li>#}
+{#                    	<a href="{{ path('admin_role_index') }}" {% if actualPath == path('admin_role_index') %}class="active"{% endif %}>#}
+{#                    		<i class="fa fa-shield" aria-hidden="true"></i>{{ 'admin.roles' | trans }}#}
+{#                    	</a>#}
+{#                    </li>#}
+{#                	{% endif %}#}
+{#                </ul>#}
+{#            </li>#}
+{#            {% endif %}#}
+        </ul>
+    </nav>
+    <div class="copyright">
+        <i class="fa fa-copyright" aria-hidden="true"></i>&nbsp{{ "now"|date("Y") }}&nbspArmorLab
+    </div>
+</aside>

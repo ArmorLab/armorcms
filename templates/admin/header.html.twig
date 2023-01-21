@@ -1,0 +1,14 @@
+<header>
+    <div class="left">
+        <img src="/assets/images/admin/logo.png" alt="ArmorCMS" />
+    </div>
+    <div class="right">
+        <nav>
+            <ul>
+{#                <li><a href="{{path('front_homepage')}}"><i class="fa fa-home" aria-hidden="true"></i></a></li>#}
+                <li><a href="#">{{app.user.email}}</a></li>
+                <li><a href="{{ path('logout') }}">{{ 'admin.logout' | trans }}&nbsp&nbsp<i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
