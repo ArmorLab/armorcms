@@ -10,6 +10,11 @@ start:
 	docker compose up -d --remove-orphans
 stop:
 	docker compose down
+rebuild-database:
+	docker exec -u www armorcms_php php bin/console doctrine:database:drop --force
+	docker exec -u www armorcms_php php bin/console doctrine:database:create
+	docker exec -u www armorcms_php php bin/console doctrine:migrations:migrate
+	docker exec -u www armorcms_php php bin/console doctrine:fixtures:load --no-interaction
 php:
 	docker exec -u www armorcms_php $(cmd)
 static-analysis:

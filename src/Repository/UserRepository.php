@@ -6,7 +6,6 @@ namespace Armorcms\Repository;
 
 use Armorcms\Entity\User;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
-use Doctrine\ORM\ORMException;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Component\Security\Core\Exception\UnsupportedUserException;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
@@ -25,9 +24,6 @@ final class UserRepository extends ServiceEntityRepository implements PasswordUp
         parent::__construct($registry, User::class);
     }
 
-    /**
-     * @throws ORMException
-     */
     public function upgradePassword(PasswordAuthenticatedUserInterface $user, string $newHashedPassword): void
     {
         if (! $user instanceof User) {
@@ -41,32 +37,17 @@ final class UserRepository extends ServiceEntityRepository implements PasswordUp
         $this->_em->flush();
     }
 
-    // /**
-    //  * @return User[] Returns an array of User objects
-    //  */
-    /*
-    public function findByExampleField($value)
+    /**
+     * @return User[]
+     */
+    public function getLastLoggedUsers(int $limit): iterable
     {
-        return $this->createQueryBuilder('u')
-            ->andWhere('u.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('u.id', 'ASC')
-            ->setMaxResults(10)
-            ->getQuery()
-            ->getResult()
-        ;
-    }
-    */
+        $queryBuilder = $this->createQueryBuilder('u');
 
-    /*
-    public function findOneBySomeField($value): ?User
-    {
-        return $this->createQueryBuilder('u')
-            ->andWhere('u.exampleField = :val')
-            ->setParameter('val', $value)
+        return $queryBuilder
+            ->andWhere($queryBuilder->expr()->isNotNull('u.lastLoginAt'))
+            ->setMaxResults($limit)
             ->getQuery()
-            ->getOneOrNullResult()
-        ;
+            ->getResult();
     }
-    */
 }

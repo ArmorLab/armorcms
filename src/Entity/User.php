@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Armorcms\Entity;
 
 use Armorcms\Repository\UserRepository;
+use DateTimeImmutable;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
@@ -25,6 +26,9 @@ final class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     #[ORM\Column(type:"string")]
     private string $password;
+
+    #[ORM\Column(type:"datetime_immutable", nullable: true)]
+    private ?DateTimeImmutable $lastLoginAt;
 
     public function getId(): ?int
     {
@@ -88,5 +92,15 @@ final class User implements UserInterface, PasswordAuthenticatedUserInterface
 
     public function eraseCredentials(): void
     {
+    }
+
+    public function setLastLoginAt(DateTimeImmutable $lastLoginAt): void
+    {
+        $this->lastLoginAt = $lastLoginAt;
+    }
+
+    public function getLastLoginAt(): ?DateTimeImmutable
+    {
+        return $this->lastLoginAt;
     }
 }
