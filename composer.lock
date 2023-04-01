@@ -2708,16 +2708,16 @@
         },
         {
             "name": "symfony/deprecation-contracts",
-            "version": "v3.2.0",
+            "version": "v3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/deprecation-contracts.git",
-                "reference": "1ee04c65529dea5d8744774d474e7cbd2f1206d3"
+                "reference": "e2d1534420bd723d0ef5aec58a22c5fe60ce6f5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/1ee04c65529dea5d8744774d474e7cbd2f1206d3",
-                "reference": "1ee04c65529dea5d8744774d474e7cbd2f1206d3",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/e2d1534420bd723d0ef5aec58a22c5fe60ce6f5e",
+                "reference": "e2d1534420bd723d0ef5aec58a22c5fe60ce6f5e",
                 "shasum": ""
             },
             "require": {
@@ -2755,7 +2755,7 @@
             "description": "A generic function and convention to trigger deprecation notices",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/deprecation-contracts/tree/v3.2.0"
+                "source": "https://github.com/symfony/deprecation-contracts/tree/v3.2.1"
             },
             "funding": [
                 {
@@ -2771,7 +2771,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-11-25T10:21:52+00:00"
+            "time": "2023-03-01T10:25:55+00:00"
         },
         {
             "name": "symfony/doctrine-bridge",
@@ -5250,16 +5250,16 @@
         },
         {
             "name": "symfony/property-access",
-            "version": "v6.2.3",
+            "version": "v6.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/property-access.git",
-                "reference": "9c267d87dd665d5d33e897290bbb9f64ae905b94"
+                "reference": "2ad1e0a07b8cab3e09905659d14f3b248e916374"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/property-access/zipball/9c267d87dd665d5d33e897290bbb9f64ae905b94",
-                "reference": "9c267d87dd665d5d33e897290bbb9f64ae905b94",
+                "url": "https://api.github.com/repos/symfony/property-access/zipball/2ad1e0a07b8cab3e09905659d14f3b248e916374",
+                "reference": "2ad1e0a07b8cab3e09905659d14f3b248e916374",
                 "shasum": ""
             },
             "require": {
@@ -5306,11 +5306,11 @@
                 "injection",
                 "object",
                 "property",
-                "property path",
+                "property-path",
                 "reflection"
             ],
             "support": {
-                "source": "https://github.com/symfony/property-access/tree/v6.2.3"
+                "source": "https://github.com/symfony/property-access/tree/v6.2.8"
             },
             "funding": [
                 {
@@ -5326,20 +5326,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-12-23T08:18:26+00:00"
+            "time": "2023-03-14T15:00:05+00:00"
         },
         {
             "name": "symfony/property-info",
-            "version": "v6.2.3",
+            "version": "v6.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/property-info.git",
-                "reference": "b4cbbbcc8679460cfeb1d5bdcb8127a2e85c376c"
+                "reference": "400a019b7c05030599fd15f02b3d4ce287631732"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/property-info/zipball/b4cbbbcc8679460cfeb1d5bdcb8127a2e85c376c",
-                "reference": "b4cbbbcc8679460cfeb1d5bdcb8127a2e85c376c",
+                "url": "https://api.github.com/repos/symfony/property-info/zipball/400a019b7c05030599fd15f02b3d4ce287631732",
+                "reference": "400a019b7c05030599fd15f02b3d4ce287631732",
                 "shasum": ""
             },
             "require": {
@@ -5399,7 +5399,7 @@
                 "validator"
             ],
             "support": {
-                "source": "https://github.com/symfony/property-info/tree/v6.2.3"
+                "source": "https://github.com/symfony/property-info/tree/v6.2.8"
             },
             "funding": [
                 {
@@ -5415,7 +5415,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-12-20T16:41:15+00:00"
+            "time": "2023-03-14T15:00:05+00:00"
         },
         {
             "name": "symfony/proxy-manager-bridge",
@@ -6317,16 +6317,16 @@
         },
         {
             "name": "symfony/string",
-            "version": "v6.2.2",
+            "version": "v6.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "863219fd713fa41cbcd285a79723f94672faff4d"
+                "reference": "193e83bbd6617d6b2151c37fff10fa7168ebddef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/863219fd713fa41cbcd285a79723f94672faff4d",
-                "reference": "863219fd713fa41cbcd285a79723f94672faff4d",
+                "url": "https://api.github.com/repos/symfony/string/zipball/193e83bbd6617d6b2151c37fff10fa7168ebddef",
+                "reference": "193e83bbd6617d6b2151c37fff10fa7168ebddef",
                 "shasum": ""
             },
             "require": {
@@ -6383,7 +6383,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/v6.2.2"
+                "source": "https://github.com/symfony/string/tree/v6.2.8"
             },
             "funding": [
                 {
@@ -6399,7 +6399,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-12-14T16:11:27+00:00"
+            "time": "2023-03-20T16:06:02+00:00"
         },
         {
             "name": "symfony/translation",
